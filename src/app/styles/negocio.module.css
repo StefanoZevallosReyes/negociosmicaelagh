@@ -1,0 +1,22 @@
+.negocio_container_container_real {
+  margin-bottom: 15px;
+  width: 100vh;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .negocio_foto{
+  width: 100%;
+  height: 520px
+}  
+
+@media (min-width: 700px) {
+  .negocio_container_container_real {
+    width: 350px;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+}
