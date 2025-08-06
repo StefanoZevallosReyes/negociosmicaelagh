@@ -37,40 +37,74 @@ const TorreGirasoles = () => {
   return (
     <>
       <p className='text-center font-bold p-2'> TORRE LOS GIRASOLES</p>
-      <Image
-        src={"https://res.cloudinary.com/dqpijrvsq/image/upload/v1730565878/condominios/torre-los-girasoles/xdiuf5ighegkjsqbhmqg.jpg"}
-        height={"100000"}
-        width={"100000"}
-        className="h-[250px] p-2"
-      />
+      <div className="block lg:hidden">
+                <Image
+                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+                  alt="Condominio"
+                  width={550}
+                  height={550}
+                  className="rounded-lg p-2 w-full h-auto"
+                />
+              </div>
+      
+              {/* Solo en pantallas grandes (PC) */}
+              <div className="hidden lg:flex flex-row">
+      
+                <Image
+                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+                  alt="Condominio 1"
+                  width={550}
+                  height={550}
+                  className="rounded-lg p-2 w-full h-auto"
+                />
+      
+      
+                <Image
+                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1753628005/condominio_reemplzo_txnsec.jpg"
+                  alt="Condominio 2"
+                  width={550}
+                  height={550}
+                  className="rounded-lg p-2 w-full h-auto"
+                />
+      
+      
+                <Image
+                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325450/condominios/Torre Las Praderas/n69dtvgqfybcqgqf7yk1.png"
+                  alt="Condominio 3"
+                  width={550}
+                  height={550}
+                  className="rounded-lg p-2 w-full h-auto"
+                />
+                 
+      
+              </div>
       <p className='text-center p-4'>Encuentra los negocios de Torre Los Girasoles, como tiendas , servicios del hogar , restaurantes , etc.
       </p>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
+       <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Comida")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
-        </button>
-        
+        </button> 
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "MiniMarket" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("MiniMarket")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mini-Market" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Mini-Market")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Mini-Market </p>
         </button>
         <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Eventos" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Eventos")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Servicios" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Servicios")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Eventos </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Servicios </p>
         </button>
         <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Educación" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Educación")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Licores" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Licores")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Educación </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
         </button>
       </section>
       

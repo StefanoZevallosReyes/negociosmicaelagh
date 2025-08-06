@@ -57,15 +57,6 @@
             "telefono":"+51 937 555 473"
           },
           {
-            "id": 7,
-            "categoria": "Masajes",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/luxhew8bdzwtyosahfah.jpg"
-            ],
-            "alt": "negocio_masajes_eden",
-            "telefono":"+51 937 555 473"
-          },
-          {
             "id": 8,
             "categoria": "Comida",
             "imagenes_negocio": [
