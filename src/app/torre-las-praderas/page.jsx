@@ -23,8 +23,8 @@ const TorrePraderas = () => {
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
   const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
-  
-  const [datos_negocio_torres_girasoles,setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
+
+  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
 
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
@@ -35,49 +35,61 @@ const TorrePraderas = () => {
   return (
     <>
       <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
-       <div className="block lg:hidden">
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
-            alt="Condominio"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-        </div>
+      <div className="block lg:hidden">
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"
+          alt="Condominio"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
+      </div>
 
-        {/* Solo en pantallas grandes (PC) */}
-        <div className="hidden lg:flex flex-row">
+      {/* Solo en pantallas grandes (PC) */}
+      <div className="hidden lg:flex flex-row">
 
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
-            alt="Condominio 1"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-
-
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1753628005/condominio_reemplzo_txnsec.jpg"
-            alt="Condominio 2"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+          alt="Condominio 1"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
 
 
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325450/condominios/Torre Las Praderas/n69dtvgqfybcqgqf7yk1.png"
-            alt="Condominio 3"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-         
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1753628005/condominio_reemplzo_txnsec.jpg"
+          alt="Condominio 2"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
 
-        </div>
+
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325450/condominios/Torre Las Praderas/n69dtvgqfybcqgqf7yk1.png"
+          alt="Condominio 3"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
+
+
+      </div>
       <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , servicios del hogar , restaurantes , Licores, etc.
       </p>
+      <div className="flex justify-center items-center">
+        <button
+          className={`h-14 px-6 rounded-full text-center text-white font-bold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse 
+      ${categoriaSeleccionada === "Departamentos"
+              ? 'bg-gradient-to-r from-orange-500 to-red-500'
+              : 'bg-gradient-to-r from-blue-500 to-indigo-500'
+            }`}
+          onClick={() => filtradoCategorias("Departamentos")}
+        >
+          Alquiler y venta de departamentos
+        </button>
+      </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
       <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
@@ -85,7 +97,7 @@ const TorrePraderas = () => {
           onClick={() => filtradoCategorias("Comida")}
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
-        </button> 
+        </button>
         <button
           className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mini-Market" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Mini-Market")}
@@ -104,10 +116,16 @@ const TorrePraderas = () => {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
         </button>
+        <button
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Farmacia" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Farmacia")}
+        >
+          <p className='w-24 lg:w-[140px] font-semibold'> Farmacia </p>
+        </button>
       </section>
-      
+
       <div className={styles.negocios_container}>
-      {datos_negocio_torres_girasoles.map((negocio) => (
+        {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
             {negocio.imagenes_negocio.map((imagen, index) => (
               <div key={index} onClick={() => handleImageClick(negocio.id)}>
@@ -116,7 +134,7 @@ const TorrePraderas = () => {
             ))}
           </Slider>
         ))}
-        </div>
+      </div>
 
     </>
   )

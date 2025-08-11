@@ -1,24 +1,6 @@
 {
     "data_negocios": [
-          {
-            "id": 1,
-            "categoria": "Comida",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/wix45qoytf5sghk4yupz.jpg",
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/t1nsvrjsg0w5kysbbaoq.jpg"
-            ],
-            "alt": "negocio_arepas",
-            "telefono":"+51 937 555 473"
-          },
-          {
-            "id": 2,
-            "categoria": "Comida",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928776/torre-las-praderas/qmogw85sn3ysbkpq88zf.jpg"
-            ],
-            "alt": "negocio_postres",
-            "telefono":"+51 937 555 473"
-          } ,
+         
           {
             "id": 3,
             "categoria": "Comida",
@@ -29,15 +11,7 @@
             "alt": "negocio_postres",
             "telefono":"+51 937 555 473"
           },
-          {
-            "id": 4,
-            "categoria": "Comida",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/qouzvjkrlncrlqtmcnbu.jpg"
-            ],
-            "alt": "negocio_yogurt",
-            "telefono":"+51 937 555 473"
-          },
+
           {
             "id": 5,
             "categoria": "Comida",
@@ -64,6 +38,24 @@
             ],
             "alt": "negocio_comida",
             "telefono":"+51 903 512 221"
-          }
+          },
+          {
+            "id": 9,
+            "categoria": "Mini-Market",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1754869895/el_bodegon_jk4s9k.jpg"
+            ],
+            "alt": "el_bodegon_minimarket",
+            "telefono":"+51 929 484 613"
+          }  ,
+           {
+            "id": 10,
+            "categoria": "Farmacia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1754869895/botica_nc_yqyiue.jpg"
+            ],
+            "alt": "Farmacia",
+            "telefono":"+51 903 512 221"
+          }        
         ]
         }
