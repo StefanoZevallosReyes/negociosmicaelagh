@@ -48,28 +48,39 @@ const Header = () => {
         </div>
       </header>
       {isCondominiosOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-white shadow-md z-50">
-          {/* Botón de cierre */}
+        <div className="fixed top-0 left-0 w-full h-full bg-white shadow-md rounded-lg z-50">
+          {/* Botón X en círculo rojo */}
           <div className="flex justify-end p-4">
             <button
-              className="text-2xl font-bold text-gray-600 hover:text-red-500"
               onClick={() => condominiosLista()}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold hover:bg-red-600 transition"
             >
               ✕
             </button>
           </div>
 
-          <ul className="flex flex-col ">
-            <li className="hover:bg-gray-200 rounded font-bold p-2">
-              <p>Comas</p>
-            </li>
-            <li className="hover:bg-gray-200 rounded text-blue-600 p-2" onClick={() => cerrarCondominios()}>
+          {/* Título */}
+          <p className="text-center font-bold text-lg mb-4">Lista de Condominios</p>
+
+          {/* Lista */}
+          <ul className="flex flex-col divide-y">
+            <li className="p-3 font-bold hover:bg-gray-100 cursor-default">Comas</li>
+            <li
+              className="p-3 text-blue-600 hover:bg-gray-100"
+              onClick={() => cerrarCondominios()}
+            >
               <Link href="/torre-las-praderas">Condominio Las Praderas</Link>
             </li>
-            <li className="hover:bg-gray-200 rounded text-blue-600 p-2" onClick={() => cerrarCondominios()}>
+            <li
+              className="p-3 text-blue-600 hover:bg-gray-100"
+              onClick={() => cerrarCondominios()}
+            >
               <Link href="/torre-los-girasoles">Condominio Los Girasoles</Link>
             </li>
-            <li className="hover:bg-gray-200 rounded text-blue-600 p-2" onClick={() => cerrarCondominios()}>
+            <li
+              className="p-3 text-blue-600 hover:bg-gray-100"
+              onClick={() => cerrarCondominios()}
+            >
               <Link href="/torres-del-campo">Condominio Torres Del Campo</Link>
             </li>
           </ul>
