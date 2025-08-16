@@ -67,19 +67,19 @@ const Header = () => {
             <li className="p-3 font-bold hover:bg-gray-100 cursor-default">Comas</li>
             <li
               className="p-3 text-blue-600 hover:bg-gray-100"
-              onClick={() => cerrarCondominios()}
+              
             >
               <Link href="/torre-las-praderas">Condominio Las Praderas</Link>
             </li>
             <li
               className="p-3 text-blue-600 hover:bg-gray-100"
-              onClick={() => cerrarCondominios()}
+              
             >
               <Link href="/torre-los-girasoles">Condominio Los Girasoles</Link>
             </li>
             <li
               className="p-3 text-blue-600 hover:bg-gray-100"
-              onClick={() => cerrarCondominios()}
+           
             >
               <Link href="/torres-del-campo">Condominio Torres Del Campo</Link>
             </li>
