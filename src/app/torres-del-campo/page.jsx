@@ -38,7 +38,7 @@ const TorresDelCampo = () => {
       <p className='text-center font-bold '> TORRES DEL CAMPO </p>
      <div className="block lg:hidden">
           <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397853/torresdelcampo_F_rkvbms.jpg"
             alt="Condominio"
             width={550}
             height={550}
@@ -99,11 +99,11 @@ const TorresDelCampo = () => {
           <p className='w-24 lg:w-[140px] font-semibold'> Servicios </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Licores" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Licores")}
+          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Mascotas" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Mascotas")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
-        </button>
+          <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
+        </button> 
       </section>
 
       <div className={styles.negocios_container}>

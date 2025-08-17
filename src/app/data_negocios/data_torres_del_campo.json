@@ -2,9 +2,10 @@
     "data_negocios": [
           {
             "id": 1,
-            "categoria": "MiniMarket",
+            "categoria": "Mini-Market",
             "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/wdpl8nfmfkei8uwaeygj.jpg"
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399555/MiniMarket_TorresdelCampo_do9mjt.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399865/minimarket_Torredelcampo2_clyine.jpg"
             ],
             "alt": "negocio_minimarket",
             "telefono":"+51 937 555 473"
@@ -13,16 +14,16 @@
             "id": 2,
             "categoria": "Comida",
             "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/ot5luxulryopjufzgldn.jpg"
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397359/menu_manjaresdelacosta_aueirw.jpg"
             ],
             "alt": "negocio_comida_totis",
             "telefono":"+51 977 176 327"
           } ,
           {
             "id": 3,
-            "categoria": "Servicios Generales",
+            "categoria": "Comida",
             "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/ttf4rovlzmlkcbj9wcbi.jpg"
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755400802/Broaster_Torresdelcampo_ji085e.jpg"
             ],
             "alt": "negocio_servicios_generales",
             "telefono":"+51 961 393 983"
@@ -47,9 +48,9 @@
           },
           {
             "id": 6,
-            "categoria": "Impresiones",
+            "categoria": "Servicios",
             "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/iztechyrla1mkntkev0g.jpg"
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755400698/impresiones_Torresdelcampo_lkekj7.jpg"
             ],
             "alt": "Impresiones",
             "telefono":"+51 937 555 473"
@@ -59,6 +60,15 @@
             "categoria": "Costura",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/xu7sd870n5locm6bsoja.jpg"
+            ],
+            "alt": "negocio_costureria",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 8,
+            "categoria": "Mascotas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397689/mascotas_torresdelcampo_ohku5p.jpg"
             ],
             "alt": "negocio_costureria",
             "telefono":"+51 937 555 473"
