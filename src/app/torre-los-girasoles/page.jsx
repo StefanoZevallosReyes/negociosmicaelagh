@@ -95,17 +95,12 @@ const TorreGirasoles = () => {
           <p className='w-24 lg:w-[140px] font-semibold'> Mini-Market </p>
         </button>
         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Servicios" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Servicios")}
+          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
+          onClick={() => filtradoCategorias("Impresiones")}
         >
-          <p className='w-24 lg:w-[140px] font-semibold'> Servicios </p>
+          <p className='w-24 lg:w-[140px] font-semibold'> Impresiones </p>
         </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Licores" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Licores")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Licores </p>
-        </button>
+        
       </section>
       
       <div className={styles.negocios_container}>

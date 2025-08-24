@@ -45,6 +45,15 @@
             ],
             "alt": "negocio_frapes",
             "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 7,
+            "categoria": "Impresiones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756011297/TorreLosGirasoles/Impresiones_ggsg8n.jpg"
+            ],
+            "alt": "impresiones",
+            "telefono":"+51 937 555 473"
           }
           
         ]
