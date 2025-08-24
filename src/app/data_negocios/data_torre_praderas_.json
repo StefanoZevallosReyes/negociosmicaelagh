@@ -56,6 +56,216 @@
             ],
             "alt": "Farmacia",
             "telefono":"+51 903 512 221"
-          }        
+          }   ,
+           {
+            "id": 11,
+            "categoria": "Costura",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756004348/TorrePraderas/Costura_1_awq9fr.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756004482/TorrePraderas/Costura_1.2_nptvdj.jpg"
+            ],
+            "alt": "Costura",
+            "telefono":"+51 903 512 221"
+          }    ,
+          {
+            "id": 12,
+            "categoria": "Racks",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756004561/TorrePraderas/Racks_httdzv.jpg"        
+            ],
+            "alt": "Racks",
+            "telefono":"+51 903 512 221"
+          }   ,
+          {
+            "id": 13,
+            "categoria": "Informatica",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756004763/TorrePraderas/Informatica_rqwbef.jpg"        
+            ],
+            "alt": "Informatica",
+            "telefono":"+51 903 512 221"
+          }        ,
+          {
+            "id": 14,
+            "categoria": "Menú",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005004/TorrePraderas/Men%C3%BA_1_pdxfhm.jpg"        
+            ],
+            "alt": "Menú",
+            "telefono":"+51 903 512 221"
+          }     ,
+          {
+            "id": 15,
+            "categoria": "Educación",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005108/TorrePraderas/Educacion_oaremj.jpg"        
+            ],
+            "alt": "Educación",
+            "telefono":"+51 903 512 221"
+          }      ,
+          {
+            "id": 16,
+            "categoria": "Impresiones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005271/TorrePraderas/Impresiones_ux7aiw.jpg" ,
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005340/TorrePraderas/Impresiones1.2_y6ud3c.jpg"       
+            ],
+            "alt": "Impresiones",
+            "telefono":"+51 903 512 221"
+          }       ,
+           {
+            "id": 17,
+            "categoria": "Lavanderia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005413/TorrePraderas/Lavanderia_juvdnw.jpg"  
+            ],
+            "alt": "Lavanderia",
+            "telefono":"+51 903 512 221"
+          }      ,
+          {
+            "id": 18,
+            "categoria": "Fresadas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005566/TorrePraderas/Fresadas_si5g6t.jpg"  
+            ],
+            "alt": "Fresadas",
+            "telefono":"+51 903 512 221"
+          }    ,
+          {
+            "id": 19,
+            "categoria": "Educación",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005708/TorrePraderas/Clases2_yf7634.jpg"  
+            ],
+            "alt": "Educación",
+            "telefono":"+51 903 512 221"
+          }    ,
+           {
+            "id": 20,
+            "categoria": "Netflix",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005814/TorrePraderas/Netflix_veg769.jpg"  
+            ],
+            "alt": "Netflix",
+            "telefono":"+51 903 512 221"
+          },
+           {
+            "id": 21,
+            "categoria": "Mini-Market",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006023/TorrePraderas/MiniMarket3.1_zzxyq8.jpg",
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006024/TorrePraderas/Mini-Market3_ppyrq0.jpg"  
+            ],
+            "alt": "Mini-Market",
+            "telefono":"+51 903 512 221"
+          }   ,
+                     {
+            "id": 22,
+            "categoria": "Pasteleria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006194/TorrePraderas/Pasteleria_dzrlgi.jpg"             
+            ],
+            "alt": "Pasteleria",
+            "telefono":"+51 903 512 221"
+          },
+           {
+            "id": 23,
+            "categoria": "Terapia Física",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006338/TorrePraderas/TerapiaFisica_jaobmz.jpg"             
+            ],
+            "alt": "Pasteleria",
+            "telefono":"+51 903 512 221"
+          }  ,
+           {
+            "id": 24,
+            "categoria": "Impresiones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006454/TorrePraderas/Impresiones2_spl6pg.jpg"             
+            ],
+            "alt": "Impresiones",
+            "telefono":"+51 903 512 221"
+          }    ,
+           {
+            "id": 25,
+            "categoria": "Vehiculos",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006583/TorrePraderas/Vehiculos_smcmay.jpg"             
+            ],
+            "alt": "Vehiculos",
+            "telefono":"+51 903 512 221"
+          }   ,
+           {
+            "id": 26,
+            "categoria": "Importaciones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756007810/TorrePraderas/Importaciones_vaoaix.jpg"             
+            ],
+            "alt": "Importaciones",
+            "telefono":"+51 903 512 221"
+          } ,
+          {
+            "id": 27,
+            "categoria": "Deportes",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756007891/TorrePraderas/Deportes_oesgw1.jpg"             
+            ],
+            "alt": "Deportes",
+            "telefono":"+51 903 512 221"
+          }  ,
+          {
+            "id": 28,
+            "categoria": "Comida ",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008017/TorrePraderas/Pizza_ofcmz6.jpg"             
+            ],
+            "alt": "Comida Rápida",
+            "telefono":"+51 903 512 221"
+          }     ,
+           {
+            "id": 29,
+            "categoria": "Informatica",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008237/TorrePraderas/Informatica2_wp6zlt.jpg"             
+            ],
+            "alt": "Informatica",
+            "telefono":"+51 903 512 221"
+          }    ,
+          {
+            "id": 30,
+            "categoria": "Menú",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008330/TorrePraderas/Men%C3%BA2_dla15v.jpg"             
+            ],
+            "alt": "Menú",
+            "telefono":"+51 903 512 221"
+          }       ,
+           {
+            "id": 31,
+            "categoria": "Lavanderia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008538/TorrePraderas/Lavanderia2_jqoard.jpg"             
+            ],
+            "alt": "Lavanderia",
+            "telefono":"+51 903 512 221"
+          }   ,
+          {
+            "id": 32,
+            "categoria": "Podologia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008619/TorrePraderas/Podologia_jf20yc.jpg"             
+            ],
+            "alt": "Podologia",
+            "telefono":"+51 903 512 221"
+          }    ,
+          {
+            "id": 33,
+            "categoria": "Costura",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756008709/TorrePraderas/Costura3_bpaqlq.jpg"             
+            ],
+            "alt": "Costura",
+            "telefono":"+51 903 512 221"
+          }                          
         ]
         }

@@ -3,7 +3,7 @@
         
           {
             "id": 2,
-            "categoria": "MiniMarket",
+            "categoria": "Mini-Market",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/dgdrgll4ij3owuqw2ltq.jpg"
             ],
@@ -45,15 +45,7 @@
             ],
             "alt": "negocio_frapes",
             "telefono":"+51 937 555 473"
-          },
-          {
-            "id": 7,
-            "categoria": "Comida",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/k0vztmqd1uqore3wtnti.jpg"
-            ],
-            "alt": "negocio_tamales",
-            "telefono":"+51 937 555 473"
           }
+          
         ]
         }

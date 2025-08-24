@@ -39,7 +39,7 @@ const TorreGirasoles = () => {
       <p className='text-center font-bold p-2'> TORRE LOS GIRASOLES</p>
       <div className="block lg:hidden">
                 <Image
-                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+                  src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1755401624/torre_girasoles_1_tds1cu.jpg"
                   alt="Condominio"
                   width={550}
                   height={550}
