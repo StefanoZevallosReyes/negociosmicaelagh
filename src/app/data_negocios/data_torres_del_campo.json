@@ -2,7 +2,7 @@
     "data_negocios": [
           {
             "id": 1,
-            "categoria": "Mini-Market",
+            "categoria": "🏪 Mini-Market",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399555/MiniMarket_TorresdelCampo_do9mjt.jpg",
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399865/minimarket_Torredelcampo2_clyine.jpg"
@@ -12,7 +12,7 @@
           },
           {
             "id": 2,
-            "categoria": "Comida",
+            "categoria": "🍔 Menú",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397359/menu_manjaresdelacosta_aueirw.jpg"
             ],
@@ -21,7 +21,7 @@
           } ,
           {
             "id": 3,
-            "categoria": "Comida",
+            "categoria": "🍔 Fast Food",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755400802/Broaster_Torresdelcampo_ji085e.jpg"
             ],
@@ -29,26 +29,8 @@
             "telefono":"+51 961 393 983"
           },
           {
-            "id": 4,
-            "categoria": "Peluqueria",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/kb8zwdo4cflzow0jdquu.jpg"
-            ],
-            "alt": "negocio_peluqueria",
-            "telefono":"+51 945 936 238"
-          },
-          {
-            "id": 5,
-            "categoria": "Ferreteria",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/kb8zwdo4cflzow0jdquu.jpg"
-            ],
-            "alt": "Ferreteria",
-            "telefono":"+51 921 661 508"
-          },
-          {
             "id": 6,
-            "categoria": "Impresiones",
+            "categoria": "🖨️ Impresiones",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756011127/TorresDelCampo/Impresiones_efs8pk.jpg"
             ],
@@ -66,11 +48,65 @@
           },
            {
             "id": 8,
-            "categoria": "Mascotas",
+            "categoria": "🐾 Mascotas",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397689/mascotas_torresdelcampo_ohku5p.jpg"
             ],
             "alt": "negocio_costureria",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 9,
+            "categoria": "Dental",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077566/TorresDelCampo/Dental_xl2g2t.jpg"
+            ],
+            "alt": "negocio_costureria",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 10,
+            "categoria": "🍔 Menú",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077907/TorresDelCampo/Men%C3%BA_amcb7m.jpg"
+            ],
+            "alt": "Menú",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 11,
+            "categoria": "📚 Libreria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077968/TorresDelCampo/Libreria_sdr3xd.jpg"
+            ],
+            "alt": "Menú",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 12,
+            "categoria": "📚 Libreria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078075/TorresDelCampo/Libreria2_gutlkx.jpg"
+            ],
+            "alt": "Libreria",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 13,
+            "categoria": "🪑 Alquiler de Sillas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078154/TorresDelCampo/Sillas_mllbjm.jpg"
+            ],
+            "alt": "Alquiler de Sillas",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 13,
+            "categoria": "Psicologia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078328/TorresDelCampo/Psicologia_sdbqos.jpg"
+            ],
+            "alt": "Psicologia",
             "telefono":"+51 937 555 473"
           }
         ]

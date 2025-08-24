@@ -35,7 +35,7 @@ const TorresDelCampo = () => {
 
   return (
     <>
-      <p className='text-center font-bold '> TORRES DEL CAMPO </p>
+      <p className='text-center font-bold p-2'> TORRES DEL CAMPO </p>
      <div className="block lg:hidden">
           <Image
             src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397853/torresdelcampo_F_rkvbms.jpg"
@@ -77,9 +77,9 @@ const TorresDelCampo = () => {
          
 
         </div>
-      <p className='text-center p-4'>Encuentra los negocios de Torres Del Campo, como tiendas , servicios del hogar , restaurantes , etc.
+     <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
-      <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
+      {/* <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
           className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
           onClick={() => filtradoCategorias("Comida")}
@@ -104,8 +104,40 @@ const TorresDelCampo = () => {
         >
           <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
         </button> 
+      </section> */}
+ <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
+        {[
+          "🍔 Fast Food",
+           "🍔 Menú",
+          "🏪 Mini-Market",
+          "Dental",
+          "🖨️ Impresiones",
+          "Psicologia",
+          "🪑 Alquiler de Sillas",
+          
+         
+         
+          "📚 Libreria",
+          "🐾 Mascotas"
+        ].map((cat, i) => (
+          <button
+            key={i}
+            className={`
+        w-full py-3 px-4 rounded-xl font-semibold text-white text-sm sm:text-base 
+        shadow-lg border border-white/20 
+        transition-all duration-200 ease-in-out
+        ${categoriaSeleccionada === cat
+                ? 'bg-gradient-to-r from-orange-500 to-orange-700 scale-105 shadow-orange-500/50'
+                : 'bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800'}
+        hover:shadow-xl hover:brightness-110
+        active:scale-95 active:shadow-inner
+      `}
+            onClick={() => filtradoCategorias(cat)}
+          >
+            {cat}
+          </button>
+        ))}
       </section>
-
       <div className={styles.negocios_container}>
         {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>

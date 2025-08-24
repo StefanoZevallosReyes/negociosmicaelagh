@@ -76,7 +76,7 @@ const TorrePraderas = () => {
 
 
       </div>
-      <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , servicios del hogar , restaurantes , Licores, etc.
+      <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
       <div className="flex justify-center items-center">
         <button
@@ -94,7 +94,7 @@ const TorrePraderas = () => {
       <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
         {[
           "Comida Rápida", "Mini-Market", "Farmacia", "Mascotas", "Costura",
-          "Impresiones", "Lavanderia", "Ropa", "Importaciones", "Racks", "Informatica",
+          "Impresiones", "Lavanderia", "Importaciones", "Racks", "Informatica",
           "Menú", "Educación", "Fresadas", "Netflix", "Pasteleria", "Terapia Física",
           "Vehiculos", "Deportes", "Podologia"
         ].map((cat, i) => (
@@ -116,6 +116,7 @@ const TorrePraderas = () => {
           </button>
         ))}
       </section>
+      
         <p className='p-2 font-bold'> Negocios Disponibles : </p>
       <div className={styles.negocios_container}>
         {datos_negocio_torres_girasoles.map((negocio) => (

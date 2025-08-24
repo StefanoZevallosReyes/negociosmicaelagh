@@ -12,39 +12,12 @@
           } ,
           {
             "id": 3,
-            "categoria": "Comida",
+            "categoria": "Fast Food",
             "imagenes_negocio": [
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ibkwtcdd3vgoqfgibomb.jpg"
             ],
             "alt": "negocio_comida",
             "telefono":"+51 961 393 983"
-          },
-          {
-            "id": 4,
-            "categoria": "Eventos",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ok0osqgqia1ijbg1zgxe.jpg"
-            ],
-            "alt": "alquiler_disfraces",
-            "telefono":"+51 945 936 238"
-          },
-          {
-            "id": 5,
-            "categoria": "Educación",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/ismsx7xfbadovd5nj7l2.jpg"
-            ],
-            "alt": "centro_educativo",
-            "telefono":"+51 921 661 508"
-          },
-          {
-            "id": 6,
-            "categoria": "Comida",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1730563995/condominios/torre-los-girasoles/lo6q0tcqi63psplywdgt.jpg"
-            ],
-            "alt": "negocio_frapes",
-            "telefono":"+51 937 555 473"
           },
           {
             "id": 7,
@@ -53,6 +26,96 @@
               "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756011297/TorreLosGirasoles/Impresiones_ggsg8n.jpg"
             ],
             "alt": "impresiones",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 8,
+            "categoria": "Lavanderia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756074567/TorreLosGirasoles/Lavanderia_thbx5p.jpg"
+            ],
+            "alt": "Lavanderia",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 9,
+            "categoria": "Importaciones",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075104/TorreLosGirasoles/Importaciones_fdooux.jpg"
+            ],
+            "alt": "Importaciones",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 10,
+            "categoria": "Mini-Market",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075485/TorreLosGirasoles/Mini-Market_nm21g2.jpg"
+            ],
+            "alt": "Mini-Market",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 11,
+            "categoria": "Alquiler de Sillas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075706/TorreLosGirasoles/Alquiler_de_Sillas_dlt9bq.jpg"
+            ],
+            "alt": "Alquiler de Sillas",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 12,
+            "categoria": "Psicologia Infantil",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075868/TorreLosGirasoles/Psicologia_Infantil_koqu9n.jpg"
+            ],
+            "alt": "Psicologia Infantil",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 13,
+            "categoria": "Óptica",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075938/TorreLosGirasoles/Optica_vh3b8z.jpg"
+            ],
+            "alt": "Óptica",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 14,
+            "categoria": "Netflix",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756075938/TorreLosGirasoles/Netflix_qrvpg0.jpg"
+            ],
+            "alt": "Netflix",
+            "telefono":"+51 937 555 473"
+          },
+            {
+            "id": 15,
+            "categoria": "Libreria",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756076118/TorreLosGirasoles/Libreria_qs8seg.jpg"
+            ],
+            "alt": "Libreria",
+            "telefono":"+51 937 555 473"
+          },
+          {
+            "id": 16,
+            "categoria": "Lavanderia",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756076329/TorreLosGirasoles/Lavanderia2_nzuxb2.jpg"
+            ],
+            "alt": "Lavanderia",
+            "telefono":"+51 937 555 473"
+          },
+           {
+            "id": 17,
+            "categoria": "Mascotas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756076426/TorreLosGirasoles/Mascotas_myrjvq.jpg"
+            ],
+            "alt": "Mascotas",
             "telefono":"+51 937 555 473"
           }
           

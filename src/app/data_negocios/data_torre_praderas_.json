@@ -266,6 +266,25 @@
             ],
             "alt": "Costura",
             "telefono":"+51 903 512 221"
+          }   ,
+          {
+            "id": 34,
+            "categoria": "Mascotas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078609/TorrePraderas/Mascotas_aysum9.jpg"             
+            ],
+            "alt": "Mascotas",
+            "telefono":"+51 903 512 221"
+          }   ,
+           {
+            "id": 35,
+            "categoria": "Mascotas",
+            "imagenes_negocio": [
+              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006756/TorrePraderas/Mascotas_czhmsl.jpg"  ,
+                         "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006757/TorrePraderas/Mascotas2_bh8g4x.jpg"
+            ],
+            "alt": "Mascotas",
+            "telefono":"+51 903 512 221"
           }                          
         ]
         }
