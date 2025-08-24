@@ -91,144 +91,32 @@ const TorrePraderas = () => {
         </button>
       </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className='ml-2 h-auto mb-2 flex flex-wrap gap-2'>
-        <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida Rápida" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Comida Rápida")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Comida Rápida </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mini-Market" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Mini-Market")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Mini-Market </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Servicios" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Servicios")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Servicios </p>
-        </button>
-
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Farmacia" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Farmacia")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Farmacia </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mascotas" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Mascotas")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Costura" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Costura")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Costura </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Impresiones")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Impresiones </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Lavanderia" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Lavanderia")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Lavanderia </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Ropa" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Ropa")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Ropa </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Importaciones" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Importaciones")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Importaciones </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Racks" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Racks")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Racks </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Informatica" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Informatica")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Informatica </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Menú" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Menú")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Menú </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Educación" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Educación")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Educación </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Fresadas" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Fresadas")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Fresadas </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Netflix" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Netflix")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Netflix </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Pasteleria" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Pasteleria")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Pasteleria </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Terapia Física" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Terapia Física")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Terapia Física </p>
-        </button>
-         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Vehiculos" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Vehiculos")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Vehiculos </p>
-        </button>
-         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mascotas" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Mascotas")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
-        </button>
-         <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Deportes" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Deportes")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Deportes </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Podologia" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Podologia")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Podologia </p>
-        </button>
-        
-
+      <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {[
+          "Comida Rápida", "Mini-Market", "Farmacia", "Mascotas", "Costura",
+          "Impresiones", "Lavanderia", "Ropa", "Importaciones", "Racks", "Informatica",
+          "Menú", "Educación", "Fresadas", "Netflix", "Pasteleria", "Terapia Física",
+          "Vehiculos", "Deportes", "Podologia"
+        ].map((cat, i) => (
+          <button
+            key={i}
+            className={`
+        w-full py-3 px-4 rounded-xl font-semibold text-white text-sm sm:text-base 
+        shadow-lg border border-white/20 
+        transition-all duration-200 ease-in-out
+        ${categoriaSeleccionada === cat
+                ? 'bg-gradient-to-r from-orange-500 to-orange-700 scale-105 shadow-orange-500/50'
+                : 'bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800'}
+        hover:shadow-xl hover:brightness-110
+        active:scale-95 active:shadow-inner
+      `}
+            onClick={() => filtradoCategorias(cat)}
+          >
+            {cat}
+          </button>
+        ))}
       </section>
-
+        <p className='p-2 font-bold'> Negocios Disponibles : </p>
       <div className={styles.negocios_container}>
         {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
