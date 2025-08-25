@@ -93,10 +93,25 @@ const TorrePraderas = () => {
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
       <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
         {[
-          "Comida Rápida", "Mini-Market", "Farmacia", "Mascotas", "Costura",
-          "Impresiones", "Lavanderia", "Importaciones", "Racks", "Informatica",
-          "Menú", "Educación", "Fresadas", "Netflix", "Pasteleria", "Terapia Física",
-          "Vehiculos", "Deportes", "Podologia"
+          "🍔 Fast Food",
+          "🏪 Mini-Market",
+          "💊 Farmacia",
+          "🐾 Mascotas",
+          "🧵 Costura",
+          "🖨️ Impresiones",
+          "🧺 Lavanderia",
+          "📦 Importaciones",
+          "📚 Racks",
+          "💻 Informatica",
+          "📖 Menú",
+          "🎓 Educación",
+          "🍓 Fresadas",
+          "🎬 Netflix",
+          "🍰 Pasteleria",
+          "⚕️ Terapia Física",
+          "🚗 Vehiculos",
+          "⚽ Deportes",
+          "🦶 Podologia"
         ].map((cat, i) => (
           <button
             key={i}
@@ -116,8 +131,8 @@ const TorrePraderas = () => {
           </button>
         ))}
       </section>
-      
-        <p className='p-2 font-bold'> Negocios Disponibles : </p>
+
+      {/* <p className='p-2 font-bold'> Negocios Disponibles : </p> */}
       <div className={styles.negocios_container}>
         {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>

@@ -36,48 +36,48 @@ const TorresDelCampo = () => {
   return (
     <>
       <p className='text-center font-bold p-2'> TORRES DEL CAMPO </p>
-     <div className="block lg:hidden">
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397853/torresdelcampo_F_rkvbms.jpg"
-            alt="Condominio"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-        </div>
+      <div className="block lg:hidden">
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397853/torresdelcampo_F_rkvbms.jpg"
+          alt="Condominio"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
+      </div>
 
-        {/* Solo en pantallas grandes (PC) */}
-        <div className="hidden lg:flex flex-row">
+      {/* Solo en pantallas grandes (PC) */}
+      <div className="hidden lg:flex flex-row">
 
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
-            alt="Condominio 1"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-
-
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1753628005/condominio_reemplzo_txnsec.jpg"
-            alt="Condominio 2"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325560/condominios/Torre%20Las%20Praderas/fgyjq52wd7mgoeiqdfku.jpg"
+          alt="Condominio 1"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
 
 
-          <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325450/condominios/Torre Las Praderas/n69dtvgqfybcqgqf7yk1.png"
-            alt="Condominio 3"
-            width={550}
-            height={550}
-            className="rounded-lg p-2 w-full h-auto"
-          />
-         
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1753628005/condominio_reemplzo_txnsec.jpg"
+          alt="Condominio 2"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
 
-        </div>
-     <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
+
+        <Image
+          src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1749325450/condominios/Torre Las Praderas/n69dtvgqfybcqgqf7yk1.png"
+          alt="Condominio 3"
+          width={550}
+          height={550}
+          className="rounded-lg p-2 w-full h-auto"
+        />
+
+
+      </div>
+      <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
       {/* <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
         <button
@@ -105,18 +105,15 @@ const TorresDelCampo = () => {
           <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
         </button> 
       </section> */}
- <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
+      <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
         {[
           "🍔 Fast Food",
-           "🍔 Menú",
+          "🍽️ Menú",
           "🏪 Mini-Market",
-          "Dental",
+          "🦷 Dental",
           "🖨️ Impresiones",
-          "Psicologia",
+          "🧠 Psicologia",
           "🪑 Alquiler de Sillas",
-          
-         
-         
           "📚 Libreria",
           "🐾 Mascotas"
         ].map((cat, i) => (

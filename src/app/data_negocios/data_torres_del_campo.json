@@ -1,113 +1,101 @@
 {
-    "data_negocios": [
-          {
-            "id": 1,
-            "categoria": "🏪 Mini-Market",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399555/MiniMarket_TorresdelCampo_do9mjt.jpg",
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399865/minimarket_Torredelcampo2_clyine.jpg"
-            ],
-            "alt": "negocio_minimarket",
-            "telefono":"+51 937 555 473"
-          },
-          {
-            "id": 2,
-            "categoria": "🍔 Menú",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397359/menu_manjaresdelacosta_aueirw.jpg"
-            ],
-            "alt": "negocio_comida_totis",
-            "telefono":"+51 977 176 327"
-          } ,
-          {
-            "id": 3,
-            "categoria": "🍔 Fast Food",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755400802/Broaster_Torresdelcampo_ji085e.jpg"
-            ],
-            "alt": "negocio_servicios_generales",
-            "telefono":"+51 961 393 983"
-          },
-          {
-            "id": 6,
-            "categoria": "🖨️ Impresiones",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756011127/TorresDelCampo/Impresiones_efs8pk.jpg"
-            ],
-            "alt": "Impresiones",
-            "telefono":"+51 937 555 473"
-          },
-          {
-            "id": 7,
-            "categoria": "Costura",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/xu7sd870n5locm6bsoja.jpg"
-            ],
-            "alt": "negocio_costureria",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 8,
-            "categoria": "🐾 Mascotas",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397689/mascotas_torresdelcampo_ohku5p.jpg"
-            ],
-            "alt": "negocio_costureria",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 9,
-            "categoria": "Dental",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077566/TorresDelCampo/Dental_xl2g2t.jpg"
-            ],
-            "alt": "negocio_costureria",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 10,
-            "categoria": "🍔 Menú",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077907/TorresDelCampo/Men%C3%BA_amcb7m.jpg"
-            ],
-            "alt": "Menú",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 11,
-            "categoria": "📚 Libreria",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077968/TorresDelCampo/Libreria_sdr3xd.jpg"
-            ],
-            "alt": "Menú",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 12,
-            "categoria": "📚 Libreria",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078075/TorresDelCampo/Libreria2_gutlkx.jpg"
-            ],
-            "alt": "Libreria",
-            "telefono":"+51 937 555 473"
-          },
-           {
-            "id": 13,
-            "categoria": "🪑 Alquiler de Sillas",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078154/TorresDelCampo/Sillas_mllbjm.jpg"
-            ],
-            "alt": "Alquiler de Sillas",
-            "telefono":"+51 937 555 473"
-          },
-          {
-            "id": 13,
-            "categoria": "Psicologia",
-            "imagenes_negocio": [
-              "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078328/TorresDelCampo/Psicologia_sdbqos.jpg"
-            ],
-            "alt": "Psicologia",
-            "telefono":"+51 937 555 473"
-          }
-        ]
-        }
+  "data_negocios": [
+    {
+      "id": 1,
+      "categoria": "🏪 Mini-Market",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399555/MiniMarket_TorresdelCampo_do9mjt.jpg",
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755399865/minimarket_Torredelcampo2_clyine.jpg"
+      ],
+      "alt": "negocio_minimarket"
+    },
+    {
+      "id": 2,
+      "categoria": "🍽️ Menú",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397359/menu_manjaresdelacosta_aueirw.jpg"
+      ],
+      "alt": "negocio_comida_totis"
+    },
+    {
+      "id": 3,
+      "categoria": "🍔 Fast Food",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755400802/Broaster_Torresdelcampo_ji085e.jpg"
+      ],
+      "alt": "negocio_servicios_generales"
+    },
+    {
+      "id": 6,
+      "categoria": "🖨️ Impresiones",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756011127/TorresDelCampo/Impresiones_efs8pk.jpg"
+      ],
+      "alt": "Impresiones"
+    },
+    {
+      "id": 7,
+      "categoria": "🧵 Costura",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1731189139/condominios/torres-del-campo/xu7sd870n5locm6bsoja.jpg"
+      ],
+      "alt": "negocio_costureria"
+    },
+    {
+      "id": 8,
+      "categoria": "🐾 Mascotas",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1755397689/mascotas_torresdelcampo_ohku5p.jpg"
+      ],
+      "alt": "negocio_costureria"
+    },
+    {
+      "id": 9,
+      "categoria": "🦷 Dental",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077566/TorresDelCampo/Dental_xl2g2t.jpg"
+      ],
+      "alt": "negocio_costureria"
+    },
+    {
+      "id": 10,
+      "categoria": "🍽️ Menú",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077907/TorresDelCampo/Men%C3%BA_amcb7m.jpg"
+      ],
+      "alt": "Menú"
+    },
+    {
+      "id": 11,
+      "categoria": "📚 Libreria",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756077968/TorresDelCampo/Libreria_sdr3xd.jpg"
+      ],
+      "alt": "Menú"
+    },
+    {
+      "id": 12,
+      "categoria": "📚 Libreria",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078075/TorresDelCampo/Libreria2_gutlkx.jpg"
+      ],
+      "alt": "Libreria"
+    },
+    {
+      "id": 13,
+      "categoria": "🪑 Alquiler de Sillas",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078154/TorresDelCampo/Sillas_mllbjm.jpg"
+      ],
+      "alt": "Alquiler de Sillas"
+    },
+    {
+      "id": 14,
+      "categoria": "🧠 Psicologia",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756078328/TorresDelCampo/Psicologia_sdbqos.jpg"
+      ],
+      "alt": "Psicologia"
+    }
+  ]
+}
