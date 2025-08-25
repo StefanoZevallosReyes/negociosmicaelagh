@@ -39,19 +39,17 @@ const Header = () => {
 
 
         <div className="" onClick={() => condominiosLista()}>
-         <button
-  className={`
-    h-[38px] px-5 rounded-full font-semibold text-sm
-    text-white shadow-md border border-white/10
+          <button
+            className={`
+    h-[40px] px-6 font-semibold text-sm
+    text-white shadow border border-gray-200
     transition-all duration-200 ease-in-out
-    bg-gradient-to-r from-yellow-400 to-yellow-600
-    hover:from-yellow-500 hover:to-yellow-700
-    hover:shadow-lg hover:brightness-110
-    active:scale-95 active:shadow-inner
+    bg-blue-600 hover:bg-blue-700
+    active:bg-blue-800
   `}
->
-  🏢 CONDOMINIOS
-</button>
+          >
+            🏢 CONDOMINIOS
+          </button>
         </div>
       </header>
       {isCondominiosOpen && (

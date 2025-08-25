@@ -21,8 +21,9 @@ const TorrePraderas = () => {
     slidesToScroll: 1,
     arrows: false
   };
+  
 
-  const categorias =[
+  const categorias = [
     "🍔 Fast Food",
     "🏪 Mini-Market",
     "💊 Farmacia",
@@ -43,7 +44,7 @@ const TorrePraderas = () => {
     "⚽ Deportes",
     "🦶 Podologia"
   ];
-  
+
   const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
@@ -114,16 +115,17 @@ const TorrePraderas = () => {
         <Link
           href="/torre-las-praderas/compra-y-alquiler-departamentos"
           className={`
-      max-w-xs w-full py-3 px-4 rounded-xl font-semibold text-white text-sm sm:text-base 
-      shadow-lg border border-white/20 
+      max-w-md w-full py-5 px-6 rounded-xl font-bold text-white text-lg sm:text-xl
+      shadow-2xl border border-white/30 
       transition-all duration-200 ease-in-out
-      bg-gradient-to-r from-green-500 to-emerald-700
-      hover:from-green-600 hover:to-emerald-800
-      hover:shadow-xl hover:brightness-110
+      bg-gradient-to-r from-pink-500 to-red-600
+      hover:from-pink-600 hover:to-red-700
+      hover:shadow-2xl hover:brightness-110
       active:scale-95 active:shadow-inner text-center
+      animate-[pulse-scale_1.5s_ease-in-out_infinite]
     `}
         >
-          Alquiler y venta de departamentos 🏙️
+          ✨ Alquiler y venta de departamentos 🏙️
         </Link>
       </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
