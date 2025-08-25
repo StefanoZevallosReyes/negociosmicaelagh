@@ -21,16 +21,33 @@ const TorreGirasoles = () => {
     arrows: false
   };
 
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
+  const categorias = [
+    "🍔 Fast Food",
+    "🏪 Mini-Market",
+    "🖨️ Impresiones",
+    "🧺 Lavanderia",
+    "📦 Importaciones",
+    "🪑 Alquiler de Sillas",
+    "🧠 Psicologia Infantil",
+    "👓 Óptica",
+    "🎬 Netflix",
+    "📚 Libreria",
+    "🐾 Mascotas"
+  ];
+  const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
   const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
 
-  const [datos_negocio_torres_praderas, setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
+  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
+    datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
+  );
 
   const filtradoCategorias = (categoria) => {
-    const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
-    setDatosNegocioPraderas(datosFiltradosCategorias)
+    const datosFiltradosCategorias = datos_originales_estatico.filter(
+      (dato) => dato.categoria === categoria
+    );
+    setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
-
   };
 
 
@@ -81,8 +98,8 @@ const TorreGirasoles = () => {
       <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-    
-      <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
+
+      <section className="p-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
         {[
           "🍔 Fast Food",
           "🏪 Mini-Market",
@@ -116,7 +133,7 @@ const TorreGirasoles = () => {
       </section>
 
       <div className={styles.negocios_container}>
-        {datos_negocio_torres_praderas.map((negocio) => (
+        {datos_negocio_torres_girasoles.map((negocio) => (
           <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
             {negocio.imagenes_negocio.map((imagen, index) => (
               <div key={index} onClick={() => handleImageClick(negocio.id)}>

@@ -8,7 +8,7 @@ import styles from "@/app/styles/nav.module.css";
 import React from 'react'
 import { useState } from 'react';
 import Negocio from "@/app/components/Negocio"
-import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torres_del_campo.json"
+import datosNegocioTorresDelCampo from "@/app/data_negocios/data_torres_del_campo.json"
 
 const TorresDelCampo = () => {
 
@@ -20,17 +20,30 @@ const TorresDelCampo = () => {
     slidesToScroll: 1,
     arrows: false
   };
+  const categorias = [
+    "🍔 Fast Food",
+    "🍽️ Menú",
+    "🏪 Mini-Market",
+    "🦷 Dental",
+    "🖨️ Impresiones",
+    "🧠 Psicologia",
+    "🪑 Alquiler de Sillas",
+    "📚 Libreria",
+    "🐾 Mascotas"
+  ]
+  const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
+  const [datos_originales_estatico] = useState(datosNegocioTorresDelCampo.data_negocios);
+  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
+    datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
+  );
 
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida");
-  const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
-
-  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
-
-  const filtradoCategorias = (categoria) => {
-    const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
-    setDatosNegocioPraderas(datosFiltradosCategorias)
+   const filtradoCategorias = (categoria) => {
+    const datosFiltradosCategorias = datos_originales_estatico.filter(
+      (dato) => dato.categoria === categoria
+    );
+    setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
-
   };
 
   return (
@@ -79,33 +92,8 @@ const TorresDelCampo = () => {
       </div>
       <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
-      {/* <section className='ml-2 h-auto mb-2 grid grid-cols-3 gap-2 sm:flex sm:items-center sm:overflow-x-auto sm:space-x-2'>
-        <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Comida" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Comida")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Comida </p>
-        </button> 
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Mini-Market" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Mini-Market")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Mini-Market </p>
-        </button>
-        <button
-          className={`h-10 rounded-full text-center mr-2 ${categoriaSeleccionada === "Impresiones" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Impresiones")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Impresiones </p>
-        </button>
-        <button
-          className={` h-10 rounded-full text-center  ${categoriaSeleccionada === "Mascotas" ? 'bg-orange-600' : 'bg-blue-500'}`}
-          onClick={() => filtradoCategorias("Mascotas")}
-        >
-          <p className='w-24 lg:w-[140px] font-semibold'> Mascotas </p>
-        </button> 
-      </section> */}
-      <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
+
+      <section className="p-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
         {[
           "🍔 Fast Food",
           "🍽️ Menú",

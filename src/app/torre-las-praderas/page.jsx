@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'react-medium-image-zoom/dist/styles.css';
 import styles from "@/app/styles/nav.module.css";
 import React from 'react'
+import Link from 'next/link';
 import { useState } from 'react';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_praderas_.json"
@@ -21,14 +22,43 @@ const TorrePraderas = () => {
     arrows: false
   };
 
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("Comida Rápida");
+  const categorias =[
+    "🍔 Fast Food",
+    "🏪 Mini-Market",
+    "💊 Farmacia",
+    "🐾 Mascotas",
+    "🧵 Costura",
+    "🖨️ Impresiones",
+    "🧺 Lavanderia",
+    "📦 Importaciones",
+    "📚 Racks",
+    "💻 Informatica",
+    "📖 Menú",
+    "🎓 Educación",
+    "🍓 Fresadas",
+    "🎬 Netflix",
+    "🍰 Pasteleria",
+    "⚕️ Terapia Física",
+    "🚗 Vehiculos",
+    "⚽ Deportes",
+    "🦶 Podologia"
+  ];
+  
+  const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
+
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
   const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
 
-  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(datos_originales_estatico.filter((dato) => dato.categoria === "Comida"))
+  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
+    datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
+  );
+
 
   const filtradoCategorias = (categoria) => {
-    const datosFiltradosCategorias = datos_originales_estatico.filter((dato) => dato.categoria === categoria);
-    setDatosNegocioPraderas(datosFiltradosCategorias)
+    const datosFiltradosCategorias = datos_originales_estatico.filter(
+      (dato) => dato.categoria === categoria
+    );
+    setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
   };
 
@@ -76,22 +106,28 @@ const TorrePraderas = () => {
 
 
       </div>
-      <p className='text-center p-4'>Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
+      <p className='text-center p-4'>
+        Encuentra negocios y servicios cercanos como <span className="font-semibold">
+          Fast Food , lavanderías, impresiones, librerias y mini-markets</span>, pensados para tu día a día. 🏠
       </p>
-      <div className="flex justify-center items-center">
-        <button
-          className={`h-14 px-6 rounded-full text-center text-white font-bold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse 
-      ${categoriaSeleccionada === "Departamentos"
-              ? 'bg-gradient-to-r from-orange-500 to-red-500'
-              : 'bg-gradient-to-r from-blue-500 to-indigo-500'
-            }`}
-          onClick={() => filtradoCategorias("Departamentos")}
+      <div className="flex justify-center items-center px-4">
+        <Link
+          href="/torre-las-praderas/compra-y-alquiler-departamentos"
+          className={`
+      max-w-xs w-full py-3 px-4 rounded-xl font-semibold text-white text-sm sm:text-base 
+      shadow-lg border border-white/20 
+      transition-all duration-200 ease-in-out
+      bg-gradient-to-r from-green-500 to-emerald-700
+      hover:from-green-600 hover:to-emerald-800
+      hover:shadow-xl hover:brightness-110
+      active:scale-95 active:shadow-inner text-center
+    `}
         >
-          Alquiler y venta de departamentos
-        </button>
+          Alquiler y venta de departamentos 🏙️
+        </Link>
       </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
-      <section className="ml-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <section className="p-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
         {[
           "🍔 Fast Food",
           "🏪 Mini-Market",

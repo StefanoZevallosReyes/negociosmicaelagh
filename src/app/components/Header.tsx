@@ -39,12 +39,19 @@ const Header = () => {
 
 
         <div className="" onClick={() => condominiosLista()}>
-          <button
-            className="h-[45px] bg-yellow-400 border-2 border-yellow-600 text-black font-bold text-lg
-               rounded-full shadow-md "
-          >
-            CONDOMINIOS
-          </button>
+         <button
+  className={`
+    h-[38px] px-5 rounded-full font-semibold text-sm
+    text-white shadow-md border border-white/10
+    transition-all duration-200 ease-in-out
+    bg-gradient-to-r from-yellow-400 to-yellow-600
+    hover:from-yellow-500 hover:to-yellow-700
+    hover:shadow-lg hover:brightness-110
+    active:scale-95 active:shadow-inner
+  `}
+>
+  🏢 CONDOMINIOS
+</button>
         </div>
       </header>
       {isCondominiosOpen && (
@@ -79,7 +86,7 @@ const Header = () => {
             </li>
             <li
               className="p-3 text-blue-600 hover:bg-gray-100"
-           onClick={() => condominiosLista()}
+              onClick={() => condominiosLista()}
             >
               <Link href="/torres-del-campo">Condominio Torres Del Campo</Link>
             </li>
