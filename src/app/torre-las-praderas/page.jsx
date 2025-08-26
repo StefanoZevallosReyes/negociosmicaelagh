@@ -125,7 +125,7 @@ const TorrePraderas = () => {
       animate-[pulse-scale_1.5s_ease-in-out_infinite]
     `}
         >
-          ✨ Alquiler y venta de departamentos 🏙️
+           Alquiler y venta de departamentos 🏙️
         </Link>
       </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>

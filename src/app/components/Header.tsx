@@ -28,7 +28,7 @@ const Header = () => {
           </div>
 
           <Image
-            className="ml-4 cursor-pointer inline-block"
+            className="ml-4 mr-2 cursor-pointer inline-block"
             src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1744924105/condominios/logo/eplzbcuyazcm92rbtbcz.jpg"
             alt="Descripción de la imagen"
             width={40}
@@ -45,7 +45,7 @@ const Header = () => {
     text-white shadow border border-gray-200
     transition-all duration-200 ease-in-out
     bg-blue-600 hover:bg-blue-700
-    active:bg-blue-800
+    active:bg-blue-800 mr-2
   `}
           >
             🏢 CONDOMINIOS

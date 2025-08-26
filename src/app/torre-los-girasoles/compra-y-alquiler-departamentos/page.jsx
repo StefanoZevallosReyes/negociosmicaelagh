@@ -9,7 +9,7 @@ const Page = () => {
 
   return (
     <>
-      <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
+      <p className='text-center font-bold p-2'> TORRE LOS GIRASOLES</p>
       <div className="block lg:hidden">
         <Image
           src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1725126953/condominios/wizlcolopbq0p2zvhhlx.jpg"
@@ -84,7 +84,7 @@ const Page = () => {
       <div className="mb-6">
         {modo === "compra" && (
           <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1756090506/TorrePraderas/Compra-y-Alquier-de-Departamentos/compra-de-departamentos_obtkjb.jpg"
+            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1756176065/TorreLosGirasoles/ventadepartamento_k2ms1l.jpg"
             alt="Compra de condominios"
             width={400}
             height={250}
@@ -93,7 +93,7 @@ const Page = () => {
         )}
         {modo === "venta" && (
           <Image
-            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1756090506/TorrePraderas/Compra-y-Alquier-de-Departamentos/alquiler-de-departamento_onauau.jpg"
+            src="https://res.cloudinary.com/dqpijrvsq/image/upload/v1756175704/TorreLosGirasoles/aquilerdepartamento_tvhqx2.jpg"
             alt="Venta de condominios"
             width={400}
             height={250}

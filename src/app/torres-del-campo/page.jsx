@@ -7,6 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import styles from "@/app/styles/nav.module.css";
 import React from 'react'
 import { useState } from 'react';
+import Link from 'next/link';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorresDelCampo from "@/app/data_negocios/data_torres_del_campo.json"
 
@@ -38,7 +39,7 @@ const TorresDelCampo = () => {
     datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
   );
 
-   const filtradoCategorias = (categoria) => {
+  const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter(
       (dato) => dato.categoria === categoria
     );
@@ -92,7 +93,23 @@ const TorresDelCampo = () => {
       </div>
       <p className='text-center p-4'> Encuentra los negocios de Torre Las Praderas, como tiendas , Menú , Lavanderia, Impresiones , Mini-Markets, etc.
       </p>
-
+      <div className="flex justify-center items-center px-4">
+        <Link
+          href="/torre-los-girasoles/compra-y-alquiler-departamentos"
+          className={`
+      max-w-md w-full py-5 px-6 rounded-xl font-bold text-white text-lg sm:text-xl
+      shadow-2xl border border-white/30 
+      transition-all duration-200 ease-in-out
+      bg-gradient-to-r from-pink-500 to-red-600
+      hover:from-pink-600 hover:to-red-700
+      hover:shadow-2xl hover:brightness-110
+      active:scale-95 active:shadow-inner text-center
+      animate-[pulse-scale_1.5s_ease-in-out_infinite]
+    `}
+        >
+          Alquiler y venta de departamentos 🏙️
+        </Link>
+      </div>
       <section className="p-2 h-auto mb-4 grid grid-cols-2 sm:grid-cols-3 gap-4 place-items-center">
         {[
           "🍔 Fast Food",
