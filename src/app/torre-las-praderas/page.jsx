@@ -142,14 +142,19 @@ const TorrePraderas = () => {
           "📚 Racks",
           "💻 Informatica",
           "📖 Menú",
-          "🎓 Educación",
-          "🍓 Fresadas",
+          "🎓 Clases",
+          "🛏️ Fresadas",
           "🎬 Netflix",
           "🍰 Pasteleria",
           "⚕️ Terapia Física",
           "🚗 Vehiculos",
           "⚽ Deportes",
-          "🦶 Podologia"
+          "🦶 Podologia",
+          "🍿 Snacks",
+          "🦷 Dental",
+          "🖼️ Melamines",
+          "🧸 Guardería",
+          "📶 Internet Hogar"
         ].map((cat, i) => (
           <button
             key={i}

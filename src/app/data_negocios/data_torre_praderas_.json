@@ -101,7 +101,7 @@
     },
     {
       "id": 18,
-      "categoria": "🍓 Fresadas",
+      "categoria": "🛏️ Fresadas",
       "imagenes_negocio": [
         "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005566/TorrePraderas/Fresadas_si5g6t.jpg"
       ],
@@ -109,11 +109,11 @@
     },
     {
       "id": 19,
-      "categoria": "🎓 Educación",
+      "categoria": "🎓 Clases",
       "imagenes_negocio": [
         "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756005708/TorrePraderas/Clases2_yf7634.jpg"
       ],
-      "alt": "Educación"
+      "alt": "Clases"
     },
     {
       "id": 20,
@@ -244,6 +244,49 @@
         "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756006757/TorrePraderas/Mascotas2_bh8g4x.jpg"
       ],
       "alt": "Mascotas"
+    },
+    {
+      "id": 36,
+      "categoria": "🍿 Snacks",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756178245/TorrePraderas/Snacks_wzyeaq.jpg"  
+      ],
+      "alt": "Mascotas"
+    },
+    {
+      "id": 37,
+      "categoria": "🍿 Snacks",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756178546/TorrePraderas/snacks2_mnqwps.jpg",
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1725928775/torre-las-praderas/t1nsvrjsg0w5kysbbaoq.jpg" ,
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756178542/TorrePraderas/snacks2.1_tfzhw9.jpg" 
+      ],
+      "alt": "Mascotas"
+    },
+     {
+      "id": 38,
+      "categoria": "🖼️ Melamines",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756179472/TorrePraderas/Melamines_mrstec.jpg"
+      ],
+      "alt": "Melamines"
+    },
+     {
+      "id": 39,
+      "categoria": "🧸 Guardería",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756180019/TorrePraderas/Guarderia_mxpz54.jpg",
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756179816/TorrePraderas/guarderia1.1_efcr3n.jpg"
+      ],
+      "alt": "Guardería"
+    },
+    {
+      "id": 40,
+      "categoria": "📶 Internet Hogar",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756180158/TorrePraderas/Internet_Hogar_m5ltkl.jpg"
+      ],
+      "alt": "Internet Hogar"
     }
   ]
 }
