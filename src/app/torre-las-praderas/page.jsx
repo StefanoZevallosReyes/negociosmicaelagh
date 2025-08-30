@@ -10,6 +10,10 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_praderas_.json"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const TorrePraderas = () => {
 
@@ -65,6 +69,55 @@ const TorrePraderas = () => {
 
   return (
     <>
+     <div className="relative max-w-3xl mx-auto">
+      <Swiper
+        modules={[Navigation]}
+        navigation
+        loop={true}
+        spaceBetween={20}
+        slidesPerView={1}
+        className="rounded-2xl shadow-lg"
+      >
+        <SwiperSlide>
+          <img
+            src="https://picsum.photos/800/400?1"
+            alt="1"
+            className="w-full h-auto object-cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://picsum.photos/800/400?2"
+            alt="2"
+            className="w-full h-auto object-cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://picsum.photos/800/400?3"
+            alt="3"
+            className="w-full h-auto object-cover"
+          />
+        </SwiperSlide>
+      </Swiper>
+
+      {/* Estilos extra para centrar flechas */}
+      <style jsx global>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: white;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.4);
+          padding: 12px;
+          border-radius: 9999px;
+        }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+          background: rgba(0, 0, 0, 0.7);
+        }
+      `}</style>
+    </div>
       <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
       <div className="block lg:hidden">
         <Image
@@ -176,17 +229,44 @@ const TorrePraderas = () => {
       </section>
 
       {/* <p className='p-2 font-bold'> Negocios Disponibles : </p> */}
-      <div className={styles.negocios_container}>
-        {datos_negocio_torres_girasoles.map((negocio) => (
-          <Slider key={negocio.id} {...settings} className='w-[100%] mb-8 flex justify-center items-center'>
-            {negocio.imagenes_negocio.map((imagen, index) => (
-              <div key={index} onClick={() => handleImageClick(negocio.id)}>
-                <Negocio key={index} alt={negocio.alt} foto_negocio_url={imagen} />
+       <div className={styles.negocios_container}>
+      {datos_negocio_torres_girasoles.map((negocio) => (
+        <Swiper
+          key={negocio.id}
+          modules={[Navigation]}
+          navigation
+          loop={true}
+          spaceBetween={20}
+          slidesPerView={1}
+          className="w-full mb-8 rounded-xl shadow-lg"
+        >
+          {negocio.imagenes_negocio.map((imagen, index) => (
+            <SwiperSlide key={index}>
+              <div onClick={() => handleImageClick(negocio.id)}>
+                <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
               </div>
-            ))}
-          </Slider>
-        ))}
-      </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ))}
+
+      {/* CSS extra para flechas al centro */}
+      <style jsx global>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: white;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.4);
+          padding: 10px;
+          border-radius: 9999px;
+        }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+          background: rgba(0, 0, 0, 0.7);
+        }
+      `}</style>
+    </div>
 
     </>
   )

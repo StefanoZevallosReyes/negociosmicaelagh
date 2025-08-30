@@ -19,7 +19,7 @@ const TorreGirasoles = () => {
     speed: 100,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: true
   };
 
   const categorias = [
