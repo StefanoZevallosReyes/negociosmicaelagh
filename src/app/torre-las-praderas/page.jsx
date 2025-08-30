@@ -236,6 +236,8 @@ const TorrePraderas = () => {
           modules={[Navigation]}
           navigation
           loop={true}
+          allowTouchMove={false}   // ❌ bloquea swipe en móvil
+          simulateTouch={false}    // ❌ bloquea drag en desktop
           spaceBetween={20}
           slidesPerView={1}
           className="w-full mb-8 rounded-xl shadow-lg"
