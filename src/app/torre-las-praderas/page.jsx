@@ -229,13 +229,12 @@ const TorrePraderas = () => {
       </section>
 
       {/* <p className='p-2 font-bold'> Negocios Disponibles : </p> */}
-       <div className={styles.negocios_container}>
+      <div className={styles.negocios_container}>
       {datos_negocio_torres_girasoles.map((negocio) => (
         <Swiper
           key={negocio.id}
-          modules={[Navigation, Zoom]}
+          modules={[Navigation]}
           navigation
-          zoom
           loop={true}
           spaceBetween={20}
           slidesPerView={1}
@@ -243,20 +242,15 @@ const TorrePraderas = () => {
         >
           {negocio.imagenes_negocio.map((imagen, index) => (
             <SwiperSlide key={index}>
-              <div className="swiper-zoom-container" onClick={() => handleImageClick(negocio.id)}>
-                {/* Aquí usamos <img> normal para permitir zoom */}
-                <img
-                  src={imagen}
-                  alt={negocio.alt}
-                  className="w-full h-auto object-cover cursor-zoom-in"
-                />
+              <div onClick={() => handleImageClick(negocio.id)}>
+                <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       ))}
 
-      {/* CSS para flechas centradas */}
+      {/* CSS extra para flechas al centro */}
       <style jsx global>{`
         .swiper-button-next,
         .swiper-button-prev {
