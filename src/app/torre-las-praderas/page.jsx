@@ -235,6 +235,7 @@ const TorrePraderas = () => {
           key={negocio.id}
           modules={[Navigation]}
           navigation
+          zoom
           loop={true}
           spaceBetween={20}
           slidesPerView={1}
