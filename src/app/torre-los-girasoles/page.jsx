@@ -7,7 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import styles from "@/app/styles/nav.module.css";
 import React from 'react'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState , useRef} from 'react';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_girasoles_.json"
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,15 +16,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const TorreGirasoles = () => {
-
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true
-  };
 
   const categorias = [
     "🍔 Fast Food",
@@ -46,6 +37,8 @@ const TorreGirasoles = () => {
   const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
     datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
   );
+  
+ const refImagenes = useRef(null);
 
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter(
@@ -53,6 +46,15 @@ const TorreGirasoles = () => {
     );
     setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
+    
+     setTimeout(() => {
+    if (refImagenes.current) {
+      refImagenes.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, 100);
   };
 
 
@@ -155,7 +157,7 @@ const TorreGirasoles = () => {
         ))}
       </section>
 
-   <div className={styles.negocios_container}>
+   <div ref={refImagenes} className={styles.negocios_container}>
       {datos_negocio_torres_girasoles.map((negocio) => (
         <Swiper
           key={negocio.id}

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'react-medium-image-zoom/dist/styles.css';
 import styles from "@/app/styles/nav.module.css";
 import React from 'react'
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import Negocio from "@/app/components/Negocio"
 import datosNegocioTorresDelCampo from "@/app/data_negocios/data_torres_del_campo.json"
@@ -17,14 +17,6 @@ import "swiper/css/navigation";
 
 const TorresDelCampo = () => {
 
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
-  };
   const categorias = [
     "🍔 Fast Food",
     "🍽️ Menú",
@@ -42,13 +34,21 @@ const TorresDelCampo = () => {
   const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
     datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
   );
-
+  const refImagenes = useRef(null);
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter(
       (dato) => dato.categoria === categoria
     );
     setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
+     setTimeout(() => {
+    if (refImagenes.current) {
+      refImagenes.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, 100);
   };
 
   return (
@@ -144,32 +144,32 @@ const TorresDelCampo = () => {
           </button>
         ))}
       </section>
- <div className={styles.negocios_container}>
-      {datos_negocio_torres_girasoles.map((negocio) => (
-        <Swiper
-          key={negocio.id}
-          modules={[Navigation]}
-          navigation
-          loop={true}
-             pagination={{ clickable: true }}
-          allowTouchMove={false}   // ❌npbloquea swipe en móvil
-          simulateTouch={false}    // ❌ bloquea drag en desktop
-          spaceBetween={20}
-          slidesPerView={1}
-          className="w-full mb-8 rounded-xl shadow-lg"
-        >
-          {negocio.imagenes_negocio.map((imagen, index) => (
-            <SwiperSlide key={index}>
-              <div onClick={() => handleImageClick(negocio.id)}>
-                <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      ))}
+      <div ref={refImagenes} className={styles.negocios_container}>
+        {datos_negocio_torres_girasoles.map((negocio) => (
+          <Swiper
+            key={negocio.id}
+            modules={[Navigation]}
+            navigation
+            loop={true}
+            pagination={{ clickable: true }}
+            allowTouchMove={false}   // ❌npbloquea swipe en móvil
+            simulateTouch={false}    // ❌ bloquea drag en desktop
+            spaceBetween={20}
+            slidesPerView={1}
+            className="w-full mb-8 rounded-xl shadow-lg"
+          >
+            {negocio.imagenes_negocio.map((imagen, index) => (
+              <SwiperSlide key={index}>
+                <div onClick={() => handleImageClick(negocio.id)}>
+                  <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ))}
 
-      {/* CSS extra para flechas al centro */}
-      <style jsx global>{`
+        {/* CSS extra para flechas al centro */}
+        <style jsx global>{`
         .swiper-button-next,
         .swiper-button-prev {
           color: white;
@@ -184,7 +184,7 @@ const TorresDelCampo = () => {
           background: rgba(0, 0, 0, 0.7);
         }
       `}</style>
-    </div>
+      </div>
 
     </>
   )

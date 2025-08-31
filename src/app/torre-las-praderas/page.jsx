@@ -7,25 +7,15 @@ import 'react-medium-image-zoom/dist/styles.css';
 import styles from "@/app/styles/nav.module.css";
 import React from 'react'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect , useRef} from 'react';
 import Negocio from "@/app/components/Negocio"
-import datosNegocioTorreGirasoles from "@/app/data_negocios/data_torre_praderas_.json"
+import datosNegocioTorrePraderas from "@/app/data_negocios/data_torre_praderas_.json"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
 const TorrePraderas = () => {
-
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false
-  };
-  
 
   const categorias = [
     "🍔 Fast Food",
@@ -52,12 +42,14 @@ const TorrePraderas = () => {
   const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
 
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
-  const [datos_originales_estatico] = useState(datosNegocioTorreGirasoles.data_negocios);
 
-  const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
+  const [datos_originales_estatico] = useState(datosNegocioTorrePraderas.data_negocios);
+
+  const [datos_negocio_torres_praderas, setDatosNegocioPraderas] = useState(
     datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
   );
 
+  const refImagenes = useRef(null);
 
   const filtradoCategorias = (categoria) => {
     const datosFiltradosCategorias = datos_originales_estatico.filter(
@@ -65,11 +57,20 @@ const TorrePraderas = () => {
     );
     setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
+
+     setTimeout(() => {
+    if (refImagenes.current) {
+      refImagenes.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, 100);
+
   };
 
   return (
     <>
-    
       <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
       <div className="block lg:hidden">
         <Image
@@ -130,7 +131,7 @@ const TorrePraderas = () => {
       animate-[pulse-scale_1.5s_ease-in-out_infinite]
     `}
         >
-           Alquiler y venta de departamentos 🏙️
+          Alquiler y venta de departamentos 🏙️
         </Link>
       </div>
       <p className='font-semibold text-md ml-2 mt-[3px]'> Categorias:</p>
@@ -181,32 +182,31 @@ const TorrePraderas = () => {
       </section>
 
       {/* <p className='p-2 font-bold'> Negocios Disponibles : </p> */}
-      <div className={styles.negocios_container}>
-      {datos_negocio_torres_girasoles.map((negocio) => (
-        <Swiper
-          key={negocio.id}
-          modules={[Navigation]}
-          navigation
-             pagination={{ clickable: true }}
-          loop={true}
-          allowTouchMove={false}   // ❌npbloquea swipe en móvil
-          simulateTouch={false}    // ❌ bloquea drag en desktop
-          spaceBetween={20}
-          slidesPerView={1}
-          className="w-full mb-8 rounded-xl shadow-lg"
-        >
-          {negocio.imagenes_negocio.map((imagen, index) => (
-            <SwiperSlide key={index}>
-              <div onClick={() => handleImageClick(negocio.id)}>
-                <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      ))}
+      <div ref={refImagenes} className={styles.negocios_container}>
+        {datos_negocio_torres_praderas.map((negocio) => (
+          <Swiper
+            key={negocio.id}
+            modules={[Navigation]}
+            navigation
+            pagination={{ clickable: true }}
+            loop={true}
+            allowTouchMove={false}   // ❌npbloquea swipe en móvil
+            simulateTouch={false}    // ❌ bloquea drag en desktop
+            slidesPerView={1}
+            className="w-full mb-8 rounded-xl shadow-lg"
+          >
+            {negocio.imagenes_negocio.map((imagen, index) => (
+              <SwiperSlide key={index}>
+                <div onClick={() => handleImageClick(negocio.id)}>
+                  <Negocio alt={negocio.alt} foto_negocio_url={imagen} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ))}
 
-      {/* CSS extra para flechas al centro */}
-      <style jsx global>{`
+        {/* CSS extra para flechas al centro */}
+        <style jsx global>{`
         .swiper-button-next,
         .swiper-button-prev {
           color: white;
@@ -221,7 +221,7 @@ const TorrePraderas = () => {
           background: rgba(0, 0, 0, 0.7);
         }
       `}</style>
-    </div>
+      </div>
     </>
   )
 }
