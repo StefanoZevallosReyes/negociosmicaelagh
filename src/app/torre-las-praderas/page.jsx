@@ -69,55 +69,7 @@ const TorrePraderas = () => {
 
   return (
     <>
-     <div className="relative max-w-3xl mx-auto">
-      <Swiper
-        modules={[Navigation]}
-        navigation
-        loop={true}
-        spaceBetween={20}
-        slidesPerView={1}
-        className="rounded-2xl shadow-lg"
-      >
-        <SwiperSlide>
-          <img
-            src="https://picsum.photos/800/400?1"
-            alt="1"
-            className="w-full h-auto object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://picsum.photos/800/400?2"
-            alt="2"
-            className="w-full h-auto object-cover"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://picsum.photos/800/400?3"
-            alt="3"
-            className="w-full h-auto object-cover"
-          />
-        </SwiperSlide>
-      </Swiper>
-
-      {/* Estilos extra para centrar flechas */}
-      <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: white;
-          top: 50%;
-          transform: translateY(-50%);
-          background: rgba(0, 0, 0, 0.4);
-          padding: 12px;
-          border-radius: 9999px;
-        }
-        .swiper-button-next:hover,
-        .swiper-button-prev:hover {
-          background: rgba(0, 0, 0, 0.7);
-        }
-      `}</style>
-    </div>
+    
       <p className='text-center font-bold p-2'> TORRE LAS PRADERAS</p>
       <div className="block lg:hidden">
         <Image
@@ -235,8 +187,9 @@ const TorrePraderas = () => {
           key={negocio.id}
           modules={[Navigation]}
           navigation
+             pagination={{ clickable: true }}
           loop={true}
-          allowTouchMove={false}   // ❌ bloquea swipe en móvil
+          allowTouchMove={false}   // ❌npbloquea swipe en móvil
           simulateTouch={false}    // ❌ bloquea drag en desktop
           spaceBetween={20}
           slidesPerView={1}
