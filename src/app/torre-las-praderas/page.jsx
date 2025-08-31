@@ -41,12 +41,12 @@ const TorrePraderas = () => {
 
   const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
 
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
 
   const [datos_originales_estatico] = useState(datosNegocioTorrePraderas.data_negocios);
 
   const [datos_negocio_torres_praderas, setDatosNegocioPraderas] = useState(
-    datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
+    datos_originales_estatico.filter((dato) => dato.categoria === "")
   );
 
   const refImagenes = useRef(null);

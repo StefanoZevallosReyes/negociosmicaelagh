@@ -29,10 +29,10 @@ const TorresDelCampo = () => {
     "🐾 Mascotas"
   ]
   const randomCategoria = categorias[Math.floor(Math.random() * categorias.length)];
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(randomCategoria);
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
   const [datos_originales_estatico] = useState(datosNegocioTorresDelCampo.data_negocios);
   const [datos_negocio_torres_girasoles, setDatosNegocioPraderas] = useState(
-    datos_originales_estatico.filter((dato) => dato.categoria === randomCategoria)
+    datos_originales_estatico.filter((dato) => dato.categoria === "")
   );
   const refImagenes = useRef(null);
   const filtradoCategorias = (categoria) => {
@@ -41,14 +41,14 @@ const TorresDelCampo = () => {
     );
     setDatosNegocioPraderas(datosFiltradosCategorias);
     setCategoriaSeleccionada(categoria);
-     setTimeout(() => {
-    if (refImagenes.current) {
-      refImagenes.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, 100);
+    setTimeout(() => {
+      if (refImagenes.current) {
+        refImagenes.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
   };
 
   return (

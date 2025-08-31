@@ -287,6 +287,37 @@
         "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756180158/TorrePraderas/Internet_Hogar_m5ltkl.jpg"
       ],
       "alt": "Internet Hogar"
+    },
+     {
+      "id": 41,
+      "categoria": "Venta",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756608793/TorrePraderas/Compra-y-Alquier-de-Departamentos/compra-de-departamentos_tubgpc.jpg"
+      ],
+      "alt": "Compra de condominios"
+    },
+     {
+      "id": 42,
+      "categoria": "Alquiler",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756608872/TorrePraderas/Compra-y-Alquier-de-Departamentos/alquiler-de-departamento_f5tvkm.jpg"
+      ],
+      "alt": "Internet Hogar"
+    }, {
+      "id": 41,
+      "categoria": "Venta",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756608793/TorrePraderas/Compra-y-Alquier-de-Departamentos/compra-de-departamentos_tubgpc.jpg"
+      ],
+      "alt": "Compra de condominios"
+    },
+     {
+      "id": 42,
+      "categoria": "Alquiler",
+      "imagenes_negocio": [
+        "https://res.cloudinary.com/dqpijrvsq/image/upload/v1756608872/TorrePraderas/Compra-y-Alquier-de-Departamentos/alquiler-de-departamento_f5tvkm.jpg"
+      ],
+      "alt": "Internet Hogar"
     }
   ]
 }
